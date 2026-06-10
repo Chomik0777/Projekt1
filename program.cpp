@@ -1,14 +1,18 @@
 #include <iostream>
+using namespace std;
 
-int main() {
-    std::cout << "###########\n";
-    std::cout << "#   #     #\n";
-    std::cout << "# # # ### #\n";
-    std::cout << "# #     # #\n";
-    std::cout << "# ##### # #\n";
-    std::cout << "#       # #\n";
-    std::cout << "######### #\n";
-    std::cout << "#         #\n";
-    std::cout << "###########\n";
-    return 0;
+int main()
+{
+
+    cout << "###########\n";
+    cout << "#   #     #\n";
+    cout << "# # # ### #\n";
+    cout << "# #     # #\n";
+    cout << "# ##### # #\n";
+    cout << "#       # #\n";
+    cout << "######### #\n";
+    cout << "#         #\n";
+    cout << "###########\n";
+        return 0;
+
 }
