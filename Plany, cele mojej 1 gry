@@ -1,1 +1,83 @@
-27/08/2026 - zmiana celu, planu
+1) Temat i Opis
+Gra, która uczy/trenuje liczenie w pamięci.
+Gracz odpowiada na losowane pytania matematyczne w określonym czasie.
+
+
+2) Cel
+- Ćwiczenie podstawowych działań matematycznych
+- Nabicie jak największej liczby punktów w trakcie jednej rundy
+- Wyniki zapisywane do plików (osobno dla trudności)
+
+
+3) Mechanika - jak to działa
+Start programu:
+1) Program pyta o imię:
+   Imie?
+    Odpowiedz: ...
+2) Program pyta o trudność:
+   Okej, Imie! Jaka trudnosc chcesz?
+    Odpowiedz: Latwy / Sredni / Trudny
+3) Program daje czas na przygotowanie:
+   Imie, runda rozpocznie sie za 10 sekund. Przygotuj sie!
+4) Start rundy:
+   Runda sie rozpoczyna!
+5) Przez 30 sekund program zadaje pytania:
+   Ile to jest X + Y?
+    Odpowiedz: ...
+   - jeśli poprawnie: "Dobrze! +1 punkt"
+   - jeśli źle: "Nieprawidlowa odpowiedz. Jest to X, a nie Y"
+6) Koniec rundy:
+   - program pokazuje zdobyte punkty
+   - zapisuje wynik do pliku (osobno dla trudności)
+
+
+4) Trudnośći i opcje
+Dostępne trudności:
+- Latwy
+- Sredni
+- Trudny
+
+Działania zależnie od trudności:
+- Latwy: +, -
+- Sredni: +, -, | *, /
+- Trudny: +, -, x, :, | ^, n!
+
+
+5) Zakres
+Liczby losowane zależą od trudności, żeby gra była grywalna:
+- Latwy: 1..20
+- Sredni: 1..50 (dzielenie ustawione tak, żeby wynik był całkowity)
+- Trudny: 1..12 (żeby potęgi i silnia nie robiły ogromnych liczb)
+
+
+6) Punkty i wyniki
+- Za każdą poprawną odpowiedź: +1 punkt
+- Punkty liczone w czasie jednej rundy
+- Wyniki zapisywane do pliku tekstowego:
+  - Wyniki_Latwy.txt
+  - Wyniki_Sredni.txt
+  - Wyniki_Trudny.txt
+Format:
+  Imie;Trudnosc;Punkty;Data
+
+
+7) Pliki
+- program.cpp
+  | Skrypt |
+
+- Plany, cele mojej gry.txt
+  | Opis i mechanika programu |
+
+- UstawieniaGracza.txt
+  Plik ustawień np.:
+  Trudnosc=Latwy
+  Level=1
+
+
+
+----------------------------------------------------------------------------------------------------
+8) Co można dalej zrobić
+- Dodać "Level" i zwiększanie poziomu
+- Dodać tablicę najlepszych wyników (top 10) do pliku
+- Dodać wybór ilości rund
+- ?Dodać proste "menu" na początku?
